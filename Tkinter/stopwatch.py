@@ -6,7 +6,7 @@ window.title("Timer")
 window.configure(background="black")
 
 canvas = tk.Canvas(window, width=220, height=220, bg="black", highlightthickness=0)
-canvas.pack(padx=10, pady=(50, 20), anchor="n")  # Usando o anchor para centralizar o Canvas verticalmente
+canvas.pack(padx=10, pady=(50, 20), anchor="n")  # Using the anchor to center the Canvas vertically
 
 circle = canvas.create_oval(20, 20, 200, 200, outline="gray78", width=3)
 
@@ -41,7 +41,7 @@ start_button = tk.Button(window, text="Start", command=start_timer, font=("Arial
 pause_button = tk.Button(window, text="Pause", command=pause_timer, font=("Arial", 15))
 stop_button = tk.Button(window, text="Stop", command=stop_timer, font=("Arial", 15))
 
-# Centralizar horizontalmente os botões na parte inferior
+# Horizontally center the buttons at the bottom
 start_button.pack(side="left", padx=(190,10), pady=(0, 10))
 pause_button.pack(side="left", padx=(5,10), pady=(0, 10))
 stop_button.pack(side="right", padx=(0,190), pady=(0, 10))
