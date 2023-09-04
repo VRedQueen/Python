@@ -1,8 +1,8 @@
 import tkinter as tk
 
 def add_checkbox():
-    current_line = text_entry.index(tk.INSERT).split('.')[0]
-    text = text_entry.get(f"{current_line}.0", f"{current_line}.end-1c")
+    current_line = text_entry.index(tk.INSERT).split('.')[0] #gets the number of the current line where the cursor is
+    text = text_entry.get(f"{current_line}.0", f"{current_line}.end-1c") #gets the text on the current line, excluding the last character ("ENTER").
     text_entry.delete(f"{current_line}.0", f"{current_line}.end-1c")
     text_entry.insert(f"{current_line}.0", "☐ ")
     text_entry.insert(f"{current_line + 1}.0", text + "\n")
